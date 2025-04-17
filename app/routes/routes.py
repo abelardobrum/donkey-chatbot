@@ -1,10 +1,10 @@
 from flask import Blueprint, render_template, request, jsonify
 from app.main import Chatbot
 
-# Blueprint
+
 bp = Blueprint('suplementos', __name__)
 
-# Inicializa o chatbot
+
 try:
     chatbot = Chatbot()
 except Exception as e:
